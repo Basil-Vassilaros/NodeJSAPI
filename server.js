@@ -17,4 +17,24 @@
 // DELETE       api/tutorials       deletes all tutorials
 
 // test the API using Postman
-var a = require('express');
+
+//Filenames
+// config/db.config.js
+// controllers/tutorial.controller.js
+// models/db.js
+// models/tutorial.model.js
+// routes/tutorial.routes.js
+// use npm to install mysql
+// use npm to install cors
+
+var express = require('express');
+var cors = require('cors');
+var app = express();
+
+//CORS stands for Cross-Origin Resource Sharing. It allows us to relax the security
+//applied to an API
+var corsOptions = {
+    origin:"http://localhost:8081"
+};
+
+console.log("project is running")
